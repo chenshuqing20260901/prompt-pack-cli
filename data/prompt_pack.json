@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "title": "Customer Avatar Builder",
+        "category": "Marketing",
+        "prompt": "You are a market research analyst.My business is [BUSINESS TYPE],targeting [AUDIENCE] in [LOCATION].Build a detailed customer avatar including demographics,top 3 pain points,and where they spend time online.",
+        "tier": "free_sample"
+    },
+    {
+        "id": 2,
+        "title": "30-Day Content Calendar",
+        "category": "Social Media",
+        "prompt": "Create a 30-day social media content calendar for a [BUSINESS TYPE].Include post topic,caption under 150 words,image description,best posting time,and hashtags.Mix:40% educational,30% entertaining,30% promotional.",
+        "tier": "paid"
+    },
+    {
+        "id": 3,
+        "title": "Email Subject Line Generator",
+        "category": "Email Marketing",
+        "prompt": "Generate 20 email subject line for a [BUSINESS TYPE] promoting [OFFER].Include 5 curiosity-driven,5 benefit-driven,5 urgency-driven,5 social-proof-driven.Each under 50 characters.",
+        "tier": "paid"
+    },
+    {
+        "id": 4,
+        "title": "Competitor Differentiator",
+        "category": "Strategy",
+        "prompt": "I run a [BUSINESS TYPE] competing with [COMPETITOR NAMES] Analyze what makes each competitor strong,then identify 3 positioning angles I could own that they don't.",
+        "tier": "paid"
+    },
+    {
+        "id": 5,
+        "title": "Landing Page Copy Framework",
+        "category": "Sales Copy",
+        "prompt": "Write landing page copy for [OFFER] targeting [AUDIENCE].Use PAS framework(problem,agitate,solution).Include headline under 10 words,subheadline,3 benefit bullets,and CTA button text.Total under 200 words.",
+        "tier": "free_sample"
+    },
+    {
+        "id": 6,
+        "title": "Customer Service Reply Templates",
+        "category": "Customer Service",
+        "prompt": "I am a customer service manager for a [BUSINESS TYPE].for the following complaint:[COMPLAINT],generate 5 reply templates in different tones:empathetic,professional,humorous,assertive,and compensation-oriented.Each includes opening,acknowledgment,solution,and closing.",
+        "tier": "paid"
+    },
+    {
+        "id": 7,
+        "title": "Product Description Optimizer",
+        "category": "E-commerce",
+        "prompt": "Write an optimized e-commerce product description for [PRODUCT NAME].Target platform:[PLATFORM].Include SEO keywords[KEYWORDS],3 core selling points,use cases,specification,and FAQ.Total 300-500 words.",
+        "tier": "paid"
+    },
+    {
+        "id": 8,
+        "title": "Data-Driven Decision Assistant",
+        "category": "Business Intelligence",
+        "prompt": "I run a [BUSINESS TYPE].This month's data:[INSERT DATA].Analyze from four dimensions:revenue,cost,customer acquisition,and retention.Identify 3 most urgent problems and provide a specific improvement plan for each.",
+        "tier": "paid"
+    }
+]
