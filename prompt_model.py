@@ -7,20 +7,21 @@ class Prompt:
         self.content=content
         self.tier=tier
     def preview(self,length=50):
-        if len(self.content)<=50:
-            return self.content
-        return self.content[:length] + "…" 
+        preview_text=f"{self.title}:{self.content}"
+        if len(preview_text)<=length:
+            return preview_text
+        return preview_text[:length] + "…" 
     def validate(self):
         if not self.title:
-            return False,"Title can't be empty."
+            return False
         if not self.content:
-            return False,"Prompt content can't be empty." 
+            return False 
         if self.tier not in ["paid","free_sample"]:
-            return False,f"Invalide tier:{self.tier}"
+            return False
         placeholders=re.findall(r'\[([A-Z\s]+)\]',self.content)   
         if not placeholders:
-            return False,"No placeholders in prompt." 
-        return True, None 
+            return False 
+        return True 
     def render(self,**kwargs):
         result=self.content
         for key,value in kwargs.items():
@@ -44,11 +45,11 @@ class Prompt:
             if field in allowed_fields:
                 setattr(self,field,value)
                 updated.append(field)
-            if updated:
-                print(f"Updated fields:{','.join(updated)}")
-            else:
-                print("No updatable fields.")
-            return len(updated)>0
-        def __repr__(self):
-            return f"Prompt(id={self.id},title='{self.title}',tier='{self.tier}')"
+        if updated:
+            print(f"Updated fields:{','.join(updated)}")
+        else:
+            print("No updatable fields.")
+        return len(updated)>0
+    def __repr__(self):
+        return f"Prompt(id={self.id},title='{self.title}',tier='{self.tier}')"
             
